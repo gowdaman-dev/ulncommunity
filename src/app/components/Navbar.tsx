@@ -43,11 +43,12 @@ class Navbar extends Component<Props, State> {
         <div className="flex items-center gap-2 justify-between w-full py-2 bg-white border-b border-orange-50 px-4 sm:px-8 py-2">
           <Link href="/">
             <Image
+              id="logo"
               src="/logo/logo.svg"
               width={100}
               height={100}
               alt="logo"
-              className="w-15"
+              className="w-15 logo"
             />
           </Link>
           <div className="flex items-center gap-2">
