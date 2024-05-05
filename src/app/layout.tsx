@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description: `ULNLabs: Full-stack web development that delivers stunning design, seamless functionality,
   and measurable results.  Harnessing the power of Node.js, React, Next.js, and more, let's elevate your online presence.`,
   icons: {
-    icon: "/fav.png",
-    shortcut: "/fav.png",
-    apple: "/fav.png",
+    icon: "./fav.png",
+    shortcut: "./fav.png",
+    apple: "./fav.png",
   }
 };
 
