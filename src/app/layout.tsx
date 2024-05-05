@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Exo } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-const inter = Exo({ subsets: ["latin"] });
+const inter = Poppins({ subsets: ["latin"] , weight: ["400", "700", "900", "500", "600", "800", "200", "300", "100"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
