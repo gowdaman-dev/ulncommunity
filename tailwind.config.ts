@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        'primary': '#FF0303', // Your main orange shade
-        'orange-light': '#FF3D00',  // Lighter orange
-        'orange-dark': '#CC7722',   // Darker orange
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
