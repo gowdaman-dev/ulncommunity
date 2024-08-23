@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -13,6 +12,9 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import MobLinks from "./MobLinks";
 
 const services = [
   { title: "Mobile App Development", href: "/services/mobile-app-development" },
@@ -25,12 +27,15 @@ const services = [
 ];
 
 export function NavigationBar() {
+  const [isMenu, setIsMenu] = React.useState(false);
   return (
     <nav className="flex justify-between items-center md:px-12 px-8 border-none bg-transparent fixed top-0 left-0 w-screen z-[20] py-2">
       <div className="logo">
-        <h1>Ulnlabs</h1>
+        <Link href={"/"}>
+          <Image src={"/logo.svg"} height={80} width={120} alt="logo" />
+        </Link>
       </div>
-      <NavigationMenu>
+      <NavigationMenu className="max-md:hidden">
         <NavigationMenuList>
           <NavigationMenuItem className="bg-transparent">
             <Link href="/" legacyBehavior passHref>
@@ -85,6 +90,40 @@ export function NavigationBar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      <div
+        onClick={() => setIsMenu(!isMenu)}
+        className="h-[30px] w-[30px] cursor-pointer md:hidden bg-white border rounded flex flex-col overflow-hidden items-center justify-center"
+      >
+        <motion.div
+          animate={
+            isMenu
+              ? {
+                  marginTop: "0px",
+                  rotate: "45deg",
+                }
+              : {
+                  marginTop: "8px",
+                  rotate: 0,
+                }
+          }
+          className="bar h-[2px] w-[20px] bg-zinc-800 absolute rounded"
+        />
+        <motion.div
+          animate={
+            isMenu
+              ? {
+                  marginTop: "0px",
+                  rotate: "-45deg",
+                }
+              : {
+                  marginTop: "-8px",
+                  rotate: 0,
+                }
+          }
+          className="bar h-[2px] w-[20px] bg-zinc-800 absolute rounded"
+        />
+      </div>
+      <MobList />
     </nav>
   );
 }
@@ -116,3 +155,17 @@ const ListItem = React.forwardRef(function ListItem(
   );
 });
 ListItem.displayName = "ListItem";
+
+export function MobList() {
+  return (
+    <div className="fixed top-[2.5rem] left-0 h-fit p-[1rem] w-screen">
+      <div className="py-[2rem] px-2 bg-white border rounded flex flex-col">
+        <MobLinks href={"/"}>Home</MobLinks>
+        <MobLinks href={"/services"}>Services</MobLinks>
+        <MobLinks href={"/services"}>Projects</MobLinks>
+        <MobLinks href={"/services"}>Blog</MobLinks>
+        <MobLinks href={"/services"}>Contact Us</MobLinks>
+      </div>
+    </div>
+  );
+}
