@@ -13,7 +13,7 @@ The navigation bar (navbar) is a crucial part of your website’s user experienc
    - **Home** (links to the homepage)
    - **About Us** (links to the About page)
    - **Services** (dropdown menu with service categories)
-     - Web Development
+     -   
      - Mobile App Development
      - Custom Software Solutions
      - API Development & Integration
