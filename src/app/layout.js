@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/user-components/common/NavigationBar";
 import { icons } from "lucide-react";
+import Lenis from "@/components/user-components/common/Lenis";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -19,7 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <NavigationBar />
-        {children}
+        <Lenis>
+          {children}
+        </Lenis>
       </body>
     </html>
   );
