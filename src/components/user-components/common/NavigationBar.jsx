@@ -14,7 +14,14 @@ import {
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import MobLinks from "./MobLinks";
+import MobLinks, { DropDownMobNav } from "./MobLinks";
+import { Github } from "lucide-react";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 
 const services = [
   { title: "Mobile App Development", href: "/services/mobile-app-development" },
@@ -123,7 +130,7 @@ export function NavigationBar() {
           className="bar h-[2px] w-[20px] bg-zinc-800 absolute rounded"
         />
       </div>
-      <MobList />
+      <MobList isMenu={isMenu} />
     </nav>
   );
 }
@@ -139,7 +146,7 @@ const ListItem = React.forwardRef(function ListItem(
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-n8ne transition-alls hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           href={href}
@@ -156,16 +163,74 @@ const ListItem = React.forwardRef(function ListItem(
 });
 ListItem.displayName = "ListItem";
 
-export function MobList() {
+export function MobList({ isMenu }) {
   return (
-    <div className="fixed top-[2.5rem] left-0 h-fit p-[1rem] w-screen">
-      <div className="py-[2rem] px-2 bg-white border rounded flex flex-col">
+    <motion.div
+      initial={{
+        x: "100%",
+      }}
+      animate={
+        !isMenu
+          ? {
+              x: "100%",
+            }
+          : {
+              x: "0%",
+            }
+      }
+      transition={{
+        duration: 1,
+        ease: "anticipate",
+      }}
+      className="fixed top-[2.8rem] left-0 min-h-[400px] translate-x-[100%] w-screen flex justify-center"
+    >
+      <motion.div className="py-[2rem] px-2 bg-white border rounded flex flex-col w-[90%] h-fit">
         <MobLinks href={"/"}>Home</MobLinks>
-        <MobLinks href={"/services"}>Services</MobLinks>
+        <MobLinks href={"/services"}>About Us</MobLinks>
+        <DropDownMobNav droplinks={services} title={"Services"} />
         <MobLinks href={"/services"}>Projects</MobLinks>
         <MobLinks href={"/services"}>Blog</MobLinks>
         <MobLinks href={"/services"}>Contact Us</MobLinks>
-      </div>
-    </div>
+        <div className="flex flex-col w-full p-2">
+          <div className="flex text-center items-center justify-center text-sm font-light">
+            <div className="h-[1px] w-full bg-zinc-200" />
+            <h1 className="whitespace-nowrap px-2 text-zinc-300 font-thin">
+              Social Media
+            </h1>
+            <div className="h-[1px] w-full bg-zinc-200" />
+          </div>
+          <div className="flex items-center justify-center px-2 gap-4 pt-4 text-zinc-200">
+            <Link href={""}>
+              <GitHubLogoIcon
+                height={28}
+                width={28}
+                className="hover:text-zinc-400 ease duration-800 transition-all"
+              />
+            </Link>
+            <Link href={""}>
+              <InstagramLogoIcon
+                height={28}
+                width={28}
+                className="hover:text-zinc-400 ease duration-800 transition-all"
+              />
+            </Link>
+            <Link href={""}>
+              <LinkedInLogoIcon
+                height={28}
+                width={28}
+                className="hover:text-zinc-400 ease duration-800 transition-all"
+              />
+            </Link>
+            <Link href={""}>
+              <TwitterLogoIcon
+                height={28}
+                width={28}
+                className="hover:text-zinc-400 ease duration-800 transition-all"
+              />
+            </Link>
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }
