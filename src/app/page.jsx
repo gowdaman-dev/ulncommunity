@@ -1,16 +1,11 @@
-import React from "react";
-import Hero from "@/components/user-components/home/Hero";
-import LangPanel from "@/components/user-components/home/LangPanel";
-import AboutUs from "@/components/user-components/home/AboutUs";
+import Image from 'next/image'
+import React from 'react'
 
-function HomePage() {
+function page() {
   return (
-    <>
-      <Hero />
-      <LangPanel />
-      <AboutUs/>
-    </>
-  );
+    <div>
+    </div>
+  )
 }
 
-export default HomePage;
+export default page
