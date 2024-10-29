@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${spaceGrotesk.className} antialiased`}
       >
-        <main className="relative flex flex-col items-center px-10 w-screen">
+        <main className="relative flex flex-col items-center px-10 max-w-screen">
           <div className="lg:w-[1044px] md:w-[760px] w-full">
             <NavBar />
             {children}
