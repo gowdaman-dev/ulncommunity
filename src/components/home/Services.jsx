@@ -39,7 +39,7 @@ const services = [
 function Services() {
     return (
         <div className="flex flex-col w-full md:border-t-[0] border-t-[1px]">
-            <div className="flex md:flex-row flec w-full justify-start gap-8 p-4 py-8">
+            <div className="flex md:flex-row flex-col w-full justify-start gap-8 p-4 py-8">
                 <h3
                     className='bg-primary text-ulndark w-fit  font-black text-2xl p-2 rounded-lg h-fit'
                 >
