@@ -10,13 +10,13 @@ function Hero() {
             <div className="w-full box-border min-h-fit  flex flex-col flex-nowrap justify-start items-start gap-6">
                 <div className="">
                     <span className="text-6xl font-black text-[#000000ff]">
-                        Navigating the digital landscape for success
+                    Crafting Digital Solutions for a New Era of Innovation
                     </span>
                 </div>
 
                 <div className="">
                     <span className="text-[20px] text-[#000000ff]">
-                        Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
+                        Our Software Company helps your Business Growth and Online Success with Expert Developers, SEO, PPC, and Content Creation Solutions.
                     </span>
                 </div>
 
@@ -27,7 +27,7 @@ function Hero() {
                 </Link>
             </div>
 
-            <div className="w-full h-[500px] relative">
+            <div className="w-full md:h-[500px] h-fit relative">
                 <HeroImg/>
             </div>
         </div>

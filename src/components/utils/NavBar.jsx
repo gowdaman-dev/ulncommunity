@@ -54,7 +54,7 @@ const NavBar = () => {
                     className="contact"
                 >
                     <button
-                        className="hover:bg-black text-black hover:text-white border border-black transition-colors ease-linear duration-200 px-4 py-2 rounded-md"
+                        className="hover:bg-black md:flex hidden text-black hover:text-white border border-black transition-colors ease-linear duration-200 px-4 py-2 rounded-md"
                     >
                         Request a quote
                     </button>
