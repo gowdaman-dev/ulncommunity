@@ -25,34 +25,44 @@ const navLinks = [
     }
 ]
 
-
-function NavBar() {
+const NavBar = () => {
     return (
         <nav
-            className='flex justify-between items-center h-16 bg-white text-black font-space-grotesk px-10 fixed w-full z-10'
+            className='flex justify-between items-center h-16 bg-white text-black relative '
         >
-            <div className="logo grid place-items-center">
-                <Link href='/'>
-                    <Image src='/logo.svg' alt='logo' width={180} height={2800} />
+            <div
+                className=" text-black flex justify-between items-center w-full"
+            >
+                <div className="logo">
+                    <Link href="/">
+                        <Image src="/logo.svg" alt="logo" width={200} height={100} />
+                    </Link>
+                </div>
+                <div className="md:flex hidden">
+                    <ul className="flex justify-between items-center gap-4">
+                        {navLinks.map((link, index) => (
+                            <li key={index}>
+                                <Link href={link.path}>
+                                    {link.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <Link
+                    href="/contact"
+                    className="contact"
+                >
+                    <button
+                        className="hover:bg-black text-black hover:text-white border border-black transition-colors ease-linear duration-200 px-4 py-2 rounded-md"
+                    >
+                        Request a quote
+                    </button>
                 </Link>
             </div>
-            <div className="hidden md:flex items-center justify-center space-x-4">
-                {navLinks.map((link, index) => (
-                    <Link
-                    className='text-black hover:text-gray-500 transition-colors ease-linear duration-300'
-                    key={index} 
-                    href={link.path}>
-                        {link.title}
-                    </Link>
-                ))}
-            </div>
-            <Link href='/Quatation'>
-                <button className='bg-transparent border border-black hover:bg-black hover:text-white transition-colors ease-linear duration-300 text-black py-2 px-4 rounded'>
-                    Get Quotation
-                </button>
-            </Link>
-        </nav>
-    )
-}
 
-export default NavBar
+        </nav>
+    );
+};
+
+export default NavBar;

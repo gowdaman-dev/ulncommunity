@@ -1,14 +1,18 @@
-import Hero from '@/components/home/Hero'
-import React from 'react'
+import Hero from "@/components/home/Hero";
+import BannerImg from "@/components/home/BannerImg";
+import Services from "@/components/home/Services";
+import Proposal from "@/components/home/Proposal";
 
-function page() {
+//The data/*.js files are objects for default data, use the component with prop values of your choice/requirement
+
+const Component = () => {
   return (
-    <main
-      className='flex flex-col items-center justify-start min-h-screen py-2 pt-[4rem] w-full px-10'
-    >
+    <>
       <Hero />
-    </main>
-  )
-}
-
-export default page
+      <BannerImg />
+      <Services/>
+      <Proposal/>
+    </>
+  );
+};
+export default Component;
