@@ -13,6 +13,9 @@ const spaceGrotesk = Space_Grotesk({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/graphics/graphics0.png" type="image/x-icon" />
+      </head>
       <body
         className={`${spaceGrotesk.className} antialiased`}
       >
