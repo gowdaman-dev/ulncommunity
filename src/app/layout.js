@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/graphics/graphics0.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/icons/fav.png" type="image/x-icon" />
         <meta name="google-site-verification" content="fe5eLpjlLJgUW_mGQL67MeXf4nscZLmsfl3L0Aoqj0M" />
       </head>
       <body

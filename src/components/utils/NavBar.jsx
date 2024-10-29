@@ -59,6 +59,9 @@ const NavBar = () => {
                         Request a quote
                     </button>
                 </Link>
+                <div className="bar md:hidden">
+                    <Image src="/icons/menu.svg" alt="bar" width={30} height={30} />
+                </div>
             </div>
 
         </nav>

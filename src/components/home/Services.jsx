@@ -68,7 +68,7 @@ function Services() {
                                     width={20}
                                 />
                             </div>
-                            <Link href={"/web-development"} className="rounded-lg">Learn More</Link>
+                            <Link href={"/web-development"} className="md:flex hidden rounded-lg">Learn More</Link>
                         </div>
                     </div>
                     <Image
@@ -94,7 +94,7 @@ function Services() {
                                     width={20}
                                 />
                             </div>
-                            <Link href={"/web-development"} className="rounded-lg">Learn More</Link>
+                            <Link href={"/web-development"} className="md:flex hidden rounded-lg">Learn More</Link>
                         </div>
                     </div>
                     <Image
@@ -120,7 +120,7 @@ function Services() {
                                     width={20}
                                 />
                             </div>
-                            <Link href={"/web-development"} className="rounded-lg text-white">Learn More</Link>
+                            <Link href={"/web-development"} className="md:flex hidden rounded-lg text-white">Learn More</Link>
                         </div>
                     </div>
                     <Image
@@ -146,7 +146,7 @@ function Services() {
                                     width={20}
                                 />
                             </div>
-                            <Link href={"/web-development"} className="rounded-lg">Learn More</Link>
+                            <Link href={"/web-development"} className="md:flex hidden rounded-lg">Learn More</Link>
                         </div>
                     </div>
                     <Image
@@ -172,7 +172,7 @@ function Services() {
                                     width={20}
                                 />
                             </div>
-                            <Link href={"/web-development"} className="rounded-lg">Learn More</Link>
+                            <Link href={"/web-development"} className="md:flex hidden rounded-lg">Learn More</Link>
                         </div>
                     </div>
                     <Image
@@ -198,7 +198,7 @@ function Services() {
                                     width={20}
                                 />
                             </div>
-                            <Link href={"/web-development"} className="rounded-lg text-white">Learn More</Link>
+                            <Link href={"/web-development"} className="md:flex hidden rounded-lg text-white">Learn More</Link>
                         </div>
                     </div>
                     <Image
