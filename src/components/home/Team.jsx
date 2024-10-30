@@ -21,9 +21,9 @@ function Team() {
               <Image
                 src={"/profiles/2.png"}
                 alt="Jahangeer"
-                className=""
-                height={90}
-                width={90}
+                className="h-[90px] w-[90px]"
+                height={500}
+                width={500}
               />
               <div className="flex items-start flex-col justify-end w-fit">
                 <h1 className="font-semibold">Jahangeer I</h1>
@@ -48,9 +48,9 @@ function Team() {
               <Image
                 src={"/profiles/1.png"}
                 alt="gowdaman"
-                className=""
-                height={90}
-                width={90}
+                className="h-[90px] w-[90px]"
+                height={500}
+                width={500}
               />
               <div className="flex items-start flex-col justify-end w-fit">
                 <h1 className="font-semibold">Gowdaman P</h1>
@@ -75,9 +75,9 @@ function Team() {
               <Image
                 src={"/profiles/3.png"}
                 alt="Hariharan"
-                className=""
-                height={90}
-                width={90}
+                className="h-[90px] w-[90px]"
+                height={500}
+                width={500}
               />
               <div className="flex items-start flex-col justify-end w-fit">
                 <h1 className="font-semibold">Hariharan K</h1>
@@ -102,9 +102,9 @@ function Team() {
               <Image
                 src={"/profiles/4.png"}
                 alt="deepath"
-                className=""
-                height={90}
-                width={90}
+                className="h-[90px] w-[90px]"
+                height={500}
+                width={500}
               />
               <div className="flex items-start flex-col justify-end w-fit">
                 <h1 className="font-semibold">Deepath S</h1>
@@ -129,9 +129,9 @@ function Team() {
               <Image
                 src={"/profiles/5.png"}
                 alt="Lokesk Kumar"
-                className=""
-                height={90}
-                width={90}
+                className="h-[90px] w-[90px]"
+                height={500}
+                width={500}
               />
               <div className="flex items-start flex-col justify-end w-fit">
                 <h1 className="font-semibold">Lokesh Kumar M</h1>
@@ -156,9 +156,9 @@ function Team() {
               <Image
                 src={"/profiles/6.png"}
                 alt="Jean"
-                className=""
-                height={90}
-                width={90}
+                className="h-[90px] w-[90px]"
+                height={500}
+                width={500}
               />
               <div className="flex items-start flex-col justify-end w-fit">
                 <h1 className="font-semibold">Jean piere D</h1>
