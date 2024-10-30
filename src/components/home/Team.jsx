@@ -91,9 +91,9 @@ function Team() {
                 <div className="md:flex hidden flex-col justify-between items-between bg-ulngray border border-ulndark border-b-8 rounded-[50px] p-8">
                     <div className="flex w-full justify-between items-start pb-8 border-b border-ulndark">
                         <div className="flex items-end gap-2">
-                            <Image src={"/profiles/1.png"} alt='gowdaman' className='' height={90} width={90} />
+                            <Image src={"/profiles/5.png"} alt='gowdaman' className='' height={90} width={90} />
                             <div className="flex items-start flex-col justify-end w-fit">
-                                <h1 className='font-semibold'>Gowdaman P</h1>
+                                <h1 className='font-semibold'>Lokesh Kumar M</h1>
                                 <p className='text-sm text-ulndark'>Founder & CEO</p>
                             </div>
                         </div>
@@ -108,9 +108,9 @@ function Team() {
                 <div className="md:flex hidden flex-col justify-between items-between bg-ulngray border border-ulndark border-b-8 rounded-[50px] p-8">
                     <div className="flex w-full justify-between items-start pb-8 border-b border-ulndark">
                         <div className="flex items-end gap-2">
-                            <Image src={"/profiles/1.png"} alt='gowdaman' className='' height={90} width={90} />
+                            <Image src={"/profiles/6.png"} alt='gowdaman' className='' height={90} width={90} />
                             <div className="flex items-start flex-col justify-end w-fit">
-                                <h1 className='font-semibold'>Gowdaman P</h1>
+                                <h1 className='font-semibold'>Jean Peri</h1>
                                 <p className='text-sm text-ulndark'>Founder & CEO</p>
                             </div>
                         </div>
