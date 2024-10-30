@@ -20,7 +20,7 @@ function Team() {
             <div className="flex items-end gap-2">
               <Image
                 src={"/profiles/2.png"}
-                alt="gowdaman"
+                alt="Jahangeer"
                 className=""
                 height={90}
                 width={90}
@@ -74,7 +74,7 @@ function Team() {
             <div className="flex items-end gap-2">
               <Image
                 src={"/profiles/3.png"}
-                alt="gowdaman"
+                alt="Hariharan"
                 className=""
                 height={90}
                 width={90}
@@ -101,7 +101,7 @@ function Team() {
             <div className="flex items-end gap-2">
               <Image
                 src={"/profiles/4.png"}
-                alt="gowdaman"
+                alt="deepath"
                 className=""
                 height={90}
                 width={90}
@@ -112,7 +112,7 @@ function Team() {
               </div>
             </div>
             <Link
-              href={"/"}
+              href={"https://www.linkedin.com/in/deepath-s-b1083626a/"}
               className="bg-ulndark rounded-full h-8 min-w-8 flex items-center justify-center text-ulngray "
             >
               <FaLinkedinIn />
@@ -128,7 +128,7 @@ function Team() {
             <div className="flex items-end gap-2">
               <Image
                 src={"/profiles/5.png"}
-                alt="gowdaman"
+                alt="Lokesk Kumar"
                 className=""
                 height={90}
                 width={90}
@@ -155,7 +155,7 @@ function Team() {
             <div className="flex items-end gap-2">
               <Image
                 src={"/profiles/6.png"}
-                alt="gowdaman"
+                alt="Jean"
                 className=""
                 height={90}
                 width={90}
