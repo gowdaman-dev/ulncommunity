@@ -94,7 +94,7 @@ function Team() {
                             <Image src={"/profiles/5.png"} alt='gowdaman' className='' height={90} width={90} />
                             <div className="flex items-start flex-col justify-end w-fit">
                                 <h1 className='font-semibold'>Lokesh Kumar M</h1>
-                                <p className='text-sm text-ulndark'>Founder & CEO</p>
+                                <p className='text-sm text-ulndark'>Senior Frontend Dev</p>
                             </div>
                         </div>
                         <Link href={'/'} className='bg-ulndark rounded-full h-8 min-w-8 flex items-center justify-center text-ulngray '>
@@ -110,8 +110,8 @@ function Team() {
                         <div className="flex items-end gap-2">
                             <Image src={"/profiles/6.png"} alt='gowdaman' className='' height={90} width={90} />
                             <div className="flex items-start flex-col justify-end w-fit">
-                                <h1 className='font-semibold'>Jean Peri</h1>
-                                <p className='text-sm text-ulndark'>Founder & CEO</p>
+                                <h1 className='font-semibold'>Jean piere D</h1>
+                                <p className='text-sm text-ulndark'>Senior Ui/Ux Designer</p>
                             </div>
                         </div>
                         <Link href={'/'} className='bg-ulndark rounded-full h-8 min-w-8 flex items-center justify-center text-ulngray '>
