@@ -1,4 +1,3 @@
-import texts from '@/app/texts'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
