@@ -46,7 +46,7 @@ function Team() {
                                 <p className='text-sm text-ulndark'>Founder & CEO</p>
                             </div>
                         </div>
-                        <Link href={'/'} className='bg-ulndark rounded-full h-8 min-w-8 flex items-center justify-center text-ulngray '>
+                        <Link href={'https://www.linkedin.com/in/gowdaman-p-b58755194'} className='bg-ulndark rounded-full h-8 min-w-8 flex items-center justify-center text-ulngray '>
                             <FaLinkedinIn />
                         </Link>
                     </div>
