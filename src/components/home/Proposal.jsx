@@ -11,7 +11,7 @@ function Proposal() {
                 <h2
                     className='font-bold text-xl'
                 >Let’s make things happen</h2>
-                <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online. </p>
+                <p>Contact us today to learn more about how our expert web and mobile app development services can empower your business to grow and succeed online with high-quality, reliable solutions tailored to your needs. </p>
                 <Link
                     href="/contact"
                     className="bg-ulndark rounded-xl text-ulngray p-2"
