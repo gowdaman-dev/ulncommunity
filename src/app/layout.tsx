@@ -4,11 +4,11 @@ import "./globals.css";
 import NavBar from "@/components/utils/NavBar";
 import { Metadata } from "next";
 import Footer from "@/components/utils/Footer";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Ulncommunity | Software Development Company",
   description:
-    "Ulncommunity is a software development company that provides web development, mobile app development, and digital marketing services. We are a team of experienced developers and designers who are passionate about creating high-quality software solutions for our clients. Contact us today to learn more about how we can help your business grow and succeed online. founded by I Jahangeer , Gowdaman Poovaragavan (gttps://gowdaman.tech) and Sathish Kumar (https://sathish.tech) , S Deepath , K Hariharan (https://jaridev.tech) , M Lokeshkumar",
+    "Ulncommunity is a software development company that provides web development, mobile app development, and digital marketing services. We are a team of experienced developers and designers who are passionate about creating high-quality software solutions for our clients. Contact us today to learn more about how we can help your business grow and succeed online. founded by I Jahangeer , Gowdaman Poovaragavan (gttps://gowdaman.tech) , S Deepath , K Hariharan (https://haridev.tech) , M Lokeshkumar",
   applicationName: "ulncommunity",
   authors: [
     { name: "I Jahangeer" },
@@ -37,6 +37,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           name="google-site-verification"
           content="fe5eLpjlLJgUW_mGQL67MeXf4nscZLmsfl3L0Aoqj0M"
         />
+        <meta
+          property="og:description"
+          content="Ulncommunity is a software development company that provides web development, mobile app development, and digital marketing services. We are a team of experienced developers and designers who are passionate about creating high-quality software solutions for our clients. Contact us today to learn more about how we can help your business grow and succeed online. founded by I Jahangeer , Gowdaman Poovaragavan (gttps://gowdaman.tech) and , S Deepath , K Hariharan (https://jaridev.tech) , M Lokeshkumar"
+        />
+        <meta property="og:image" content="/icons/fav.png"></meta>
+        <meta property="og:url" content="https://ulncommunity.me/"></meta>
+        <meta property="og:site_name" content="ulncommunity | ulnlabs"></meta>
       </head>
       <body className={`${spaceGrotesk.className} antialiased`}>
         <main className="relative flex flex-col items-center px-10 max-w-screen">
@@ -46,7 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Footer />
           </div>
         </main>
-        <Analytics/>
+        <Analytics />
       </body>
     </html>
   );
