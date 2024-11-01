@@ -14,7 +14,7 @@ export interface NavLinks {
 const navLinks: NavLinks[] = [
   {
     title: "About Us",
-    path: "/about",
+    path: "/aboutus",
   },
   {
     title: "Services",
@@ -61,7 +61,7 @@ const NavBar = () => {
           </Link>
           <div
             onClick={() => setShowMenu(!showMenu)}
-            className={`bar md:hidden  ${
+            className={`bar md:hidden cursor-pointer ${
               showMenu ? "rotate-180" : "rotate-0"
             } transition-all ease-in-out duration-300`}
           >
