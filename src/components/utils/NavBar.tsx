@@ -6,7 +6,7 @@ import { FaBars, FaX } from "react-icons/fa6";
 import PopupNav from "./PopupNav";
 import { AnimatePresence } from "framer-motion";
 
-interface NavLinks {
+export interface NavLinks {
   title: string;
   path: string;
 }

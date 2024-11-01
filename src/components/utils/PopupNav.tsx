@@ -2,11 +2,12 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLinks } from "./NavBar";
 function PopupNav({
   navLinks,
   hidemenu,
 }: {
-  navLinks: any[];
+  navLinks: NavLinks[];
   hidemenu: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
