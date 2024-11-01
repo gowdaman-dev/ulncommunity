@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/utils/NavBar";
 import { Metadata } from "next";
 import Footer from "@/components/utils/Footer";
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "Ulncommunity | Software Development Company",
   description:
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Footer />
           </div>
         </main>
+        <Analytics/>
       </body>
     </html>
   );
