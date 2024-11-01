@@ -1,6 +1,6 @@
 import React from 'react'
 
-const banner = [
+const banner:string[] = [
     "Github",
     "ReactJs",
     "NodeJs",

@@ -2,7 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const services = [
+interface Service {
+  title: string;
+  img: string;
+  link: string;
+}
+const services:Service[] = [
   {
     title: "Web Development",
     img: "/images/image1.png",

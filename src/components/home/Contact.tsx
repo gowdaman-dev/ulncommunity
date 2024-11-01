@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 function Contact() {
-  const [contactType, setContactType] = React.useState("sayhi");
+  const [contactType, setContactType] = React.useState<string>("sayhi");
   return (
     <div className="md:py-8 py-4 w-full flex flex-col justify-start items-center">
       <div className="flex md:flex-row flex-col w-full justify-start gap-8 p-4 py-8">
