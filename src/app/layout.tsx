@@ -3,7 +3,6 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/utils/NavBar";
 import { Metadata } from "next";
-import { ReactLenis} from 'lenis/react'
 import Footer from "@/components/utils/Footer";
 export const metadata: Metadata = {
   title: "Ulncommunity | Software Development Company",
@@ -28,7 +27,6 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
@@ -40,17 +38,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className={`${spaceGrotesk.className} antialiased`}>
-        <ReactLenis root options={{
-          smoothWheel: true,
-        }}>
-          <main className="relative flex flex-col items-center px-10 max-w-screen">
-            <div className="lg:w-[1044px] md:w-[760px] w-full">
-              <NavBar />
-              {children}
-              <Footer />
-            </div>
-          </main>
-        </ReactLenis>
+        <main className="relative flex flex-col items-center px-10 max-w-screen">
+          <div className="lg:w-[1044px] md:w-[760px] w-full">
+            <NavBar />
+            {children}
+            <Footer />
+          </div>
+        </main>
       </body>
     </html>
   );

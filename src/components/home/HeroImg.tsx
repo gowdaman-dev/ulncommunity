@@ -3,7 +3,7 @@ import React from 'react'
 function HeroImg() {
     return (
         <svg
-            className='w-fit'
+            className='w-fit z-0 relative'
             viewBox="0 0 601 515" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_332_1228)">
                 <path d="M311.536 432.535L329.137 427.349L324.001 445L329.137 462.601L311.536 457.465L293.885 462.601L299.07 445L293.885 427.349L311.536 432.535Z" fill="black" stroke="white" strokeMiterlimit="10" />

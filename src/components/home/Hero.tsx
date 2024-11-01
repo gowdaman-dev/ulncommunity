@@ -24,8 +24,7 @@ function Hero() {
                     Book a consultation
                 </Link>
             </div>
-
-            <div className="w-full md:h-[500px] h-fit relative">
+            <div className="w-full md:h-[500px] h-fit relative z-0">
                 <HeroImg/>
             </div>
         </div>

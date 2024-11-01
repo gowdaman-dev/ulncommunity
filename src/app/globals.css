@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+* {
+  scroll-behavior: smooth;
+}
 .primary-button {
   @apply bg-primary text-ulndark font-bold py-2 px-4 rounded;
 }
