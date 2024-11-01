@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 function Testimonials() {
   // Testimonials component manual slider on click
   const [activeIndex, setActiveIndex] = React.useState(0);
-  const carousel = useRef(null);
+  const carousel = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (carousel.current) {
       carousel.current.scrollTo({
