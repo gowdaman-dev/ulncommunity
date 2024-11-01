@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaLinkedin, FaLinkedinIn } from "react-icons/fa6";
+import {FaLinkedinIn } from "react-icons/fa6";
 function Team() {
   return (
     <div className="md:py-8 py-4 w-full flex flex-col justify-start items-center">

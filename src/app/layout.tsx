@@ -3,7 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/utils/NavBar";
 import { Metadata } from "next";
-import { ReactLenis, useLenis } from 'lenis/react'
+import { ReactLenis} from 'lenis/react'
 import Footer from "@/components/utils/Footer";
 export const metadata: Metadata = {
   title: "Ulncommunity | Software Development Company",
