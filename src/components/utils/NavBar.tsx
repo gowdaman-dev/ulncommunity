@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaBars, FaX } from 'react-icons/fa6';
-
+import PopupNav from './PopupNav';
 const navLinks = [
     {
         title: 'About Us',
@@ -31,7 +31,7 @@ const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
     return (
         <nav
-            className='flex justify-between items-center h-16 bg-white text-black relative '
+            className='fixed flex justify-between items-center h-16 bg-white/[.5] backdrop-blur-2xl text-black w-full z-50 top-0 left-0 px-10'
         >
             <div
                 className=" text-black flex justify-between items-center w-full"
@@ -68,7 +68,7 @@ const NavBar = () => {
                     }
                 </div>
             </div>
-
+            <PopupNav showMenu={showMenu} setShowMenu={setShowMenu} navLinks={navLinks} />
         </nav>
     );
 };
