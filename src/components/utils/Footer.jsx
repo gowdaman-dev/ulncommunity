@@ -32,13 +32,13 @@ function Footer() {
       </div>
       <div className="px-8">
         <div className="flex flex-col md:flex-row items-center md:justify-between justify-center py-6 border-b">
-          <div className="w-full flex flex-col gap-2 max-md:items-center">
-            <h6 className="text-sm text-ulndark bg-primary px-1 rounded-lg w-fit">
+          <div className="w-full flex flex-col gap-2 md:items-start items-center ">
+            <h6 className="text-sm  text-ulndark bg-primary px-1 rounded-lg w-fit">
               Contact us :
             </h6>
-            <div className="flex flex-col items-start text-sm font-light gap-4 w-full">
-              <div className="flex items-center justify-center w-full">
-                <p>Email:</p>
+            <div className="flex flex-col items-start text-sm font-light gap-4">
+              <div className="flex items-center justify-center">
+                <p>Email : </p>
                 <Link
                   href="mailto:ulnlabs@gmail.com"
                   className="cursor-pointer"
@@ -46,7 +46,7 @@ function Footer() {
                   ulnlabs@gmail.com
                 </Link>
               </div>
-              <div className="flex items-center justify-center w-full">
+              <div className="flex items-center justify-center">
                 <p>Phone:</p>
                 <Link href="+919384126303" className="cursor-pointer">
                   +91 93841-26303

@@ -1,6 +1,8 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import { FaBars, FaX } from 'react-icons/fa6';
 
 const navLinks = [
     {
@@ -26,6 +28,7 @@ const navLinks = [
 ]
 
 const NavBar = () => {
+    const [showMenu, setShowMenu] = useState(false);
     return (
         <nav
             className='flex justify-between items-center h-16 bg-white text-black relative '
@@ -59,8 +62,10 @@ const NavBar = () => {
                         Request a quote
                     </button>
                 </Link>
-                <div className="bar md:hidden">
-                    <Image src="/icons/menu.svg" alt="bar" width={30} height={30} />
+                <div onClick={()=>setShowMenu(!showMenu)} className={`bar md:hidden  ${showMenu?"rotate-180":"rotate-0"} transition-all ease-in-out duration-300`}>
+                    {
+                        showMenu ? <FaX /> : <FaBars />
+                    }
                 </div>
             </div>
 
