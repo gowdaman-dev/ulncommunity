@@ -2,4 +2,6 @@
 
 const dev = process.env.NODE_ENV !== 'production';
 
-export const siteUrl = dev ? 'http://localhost:3000' : 'ulncommunity.me';
+module.exports = {
+  siteUrl: dev ? 'http://localhost:3000' : 'ulncommunity.me',
+};
