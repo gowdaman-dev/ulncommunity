@@ -1,6 +1,3 @@
-// pages/terms.js
-import Head from "next/head";
-
 export default function Terms() {
   return (
     <div className="min-h-screen text-gray-200">

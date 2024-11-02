@@ -1,6 +1,3 @@
-// pages/privacy-policy.js
-import Head from "next/head";
-
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen pt-[4rem] text-gray-200 my-6">
