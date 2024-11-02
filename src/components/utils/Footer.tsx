@@ -20,7 +20,7 @@ function Footer() {
               <Link href="/contact" className="cursor-pointer">
                 Contact
               </Link>
-              <Link href="/terms" className="cursor-pointer">
+              <Link href="/termsAndConditions" className="cursor-pointer">
                 Terms
               </Link>
               <Link href="/privacy" className="cursor-pointer">
@@ -73,7 +73,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between text-xs font-light py-2">
           <div className="flex items-center gap-4">
             <p>© 2024 ulncommunity</p>
-            <Link href="/terms" className="cursor-pointer">
+            <Link href="/termsAndConditions" className="cursor-pointer">
               Terms
             </Link>
             <Link href="/privacy" className="cursor-pointer">
