@@ -21,16 +21,8 @@ const navLinks: NavLinks[] = [
     path: "/#services",
   },
   {
-    title: "Use Cases",
-    path: "/usecases",
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
+    title: "Works",
+    path: "/ourworks",
   },
 ];
 
